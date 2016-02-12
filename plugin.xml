@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.sambengtson.cordovaencrypt"
+    version="0.0.1">
+    <name>Cordova Encrypt</name>
+    <description>Making Encryption a little easier in javascript</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,encryption</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/cordova-encrypt.js" name="CordovaEncrypt">
+        <clobbers target="CordovaEncrypt" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CordovaEncrypt" >
+                <param name="android-package" value="com.sambengtson.cordovaencrypt.CordovaEncrypt"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/sambengtson/cordovaencrypt/CordovaEncrypt.java" target-dir="src/com/sambengtson/cordovaencrypt" />
+    </platform>
+
+</plugin>

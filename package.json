@@ -1,0 +1,18 @@
+{
+    "version": "0.0.1",
+    "name": "com.sambengtson.cordovaencrypt",
+    "cordova_name": "Cordova Encrypt",
+    "description": "Making encryption in javascript a little easier",
+    "license": "Apache 2.0",
+    "repo": "",
+    "issue": "",
+    "keywords": [
+        "cordova",
+        "device"
+    ],
+    "platforms": [
+        "android",
+    ],
+    "engines": [],
+    "englishdoc": ""
+}
